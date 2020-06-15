@@ -77,7 +77,7 @@ if ( locate_template( $old_file_name, false, false ) ) {
 	        </div>
 	        <div class="blog-box-inner">
 	            <div class="over thumb" >
-		            <?php if(has_post_thumbnail()) { echo the_post_thumbnail(); } ?>
+		            <?php if(has_post_thumbnail()) { echo the_post_thumbnail('large'); } ?>
 	            </div>
 	            <div class="text">
 	            	<?php the_excerpt(); ?>

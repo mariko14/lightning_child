@@ -173,7 +173,7 @@
 					<li class="wow fadeIn">
 						<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
 							<div class="front-thum">
-					            <?php if(has_post_thumbnail()) { echo the_post_thumbnail(); } ?>
+					            <?php if(has_post_thumbnail()) { echo the_post_thumbnail('large'); } ?>
 				            </div>
 				            <div class="right">
 								<time datetime="<?php the_time('Y-m-d')?>"><?php the_time("Y/n/j"); ?></time>

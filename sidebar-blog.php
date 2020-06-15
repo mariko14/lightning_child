@@ -2,7 +2,7 @@
 
 <div class="side-list">
 	<h3><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/side-blog.png" width="265" height="74" alt="ブログカテゴリー" /></h3>
-	<ul>
+	<ul class="wow fadeIn">
 	<?php $cat_info = get_categories('child_of=2');
 	    foreach ($cat_info as $category) { if($category->count != 0) : ?>
 	    <li><a href="/category/blog/<?php echo $category->category_nicename; ?>/"><span><?php echo $category->cat_name; ?></span></a></li>
@@ -11,7 +11,7 @@
 </div>
 <div class="side-list">
 	<h3><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/side-article.png" width="265" height="74" alt="ブログ　最新記事" /></h3>
-	<ul>
+	<ul class="wow fadeIn">
 	<?php $date = query_posts('showposts=5');
 	foreach($date as $post):?>
 	<li><a href="<?php echo get_permalink($id->ID); ?>" ><span><?php echo $post->post_title; ?></span></a></li>
@@ -23,7 +23,7 @@
 <div class="side-list side-viewed">
 	<h3><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/side-post.png" width="265" height="74" alt="ブログ　人気の記事" /></h3>
 	<div class="widget">
-		<ul>
+	<ul class="wow fadeIn">
 			<li class="ranking-3">
 	            <a href="https://sourire-web-studio.com/blog/freelance/いきなりwebデザイナー、しかもフリーランスって/">
 	                <div class="cms-nav-img">

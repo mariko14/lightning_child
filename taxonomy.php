@@ -1,13 +1,20 @@
 <?php get_header(); ?>
 
 
-
 <div class="section page-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="page-header_pageTitle">
-					<h1 class="entry-title"><span>WEBデザイナーと子供の生活 <?php single_cat_title(); ?>の記事</span></h1>
+					<h1 class="entry-title"><span>
+						『<?php
+						if ($terms = get_the_terms($post->ID, 'works_cat')) {
+						    foreach ( $terms as $term ) {
+						        echo esc_html($term->name);
+						    }
+						}
+						?>』の制作実績					
+					</span></h1>
 				</div>
 			</div>
 		</div>
@@ -15,7 +22,10 @@
 </div>
 
 
+
 <?php
+// Dealing with old files.
+// Actually, it's ok to only use get_template_part().
 /*
  BreadCrumb
 /*-------------------------------------------*/
@@ -30,6 +40,7 @@ if ( locate_template( $old_file_name, false, false ) ) {
 
 <div id="wrapper-area" class="wrap flex-area">
 		<div id="content">
+			<p style="padding-bottom:40px;">ここに掲載している以外の実績もございます。詳しくはメールフォームよりお問い合わせください</p>
 
 	<?php
 	/*
@@ -65,24 +76,17 @@ if ( locate_template( $old_file_name, false, false ) ) {
 	?>
 
 <div class="<?php lightning_the_class_name( 'postList' ); ?>">
-
+	
 <?php if (have_posts()) :?>
 	<?php while (have_posts()) : the_post(); ?>
-	<div class="post blog-box">
-			<div class="title_space">
-	           <h2 class="title"><span><?php the_title(); ?></span></h2>
-	            <p class="date"><?php the_time('Y.m.d')?> カテゴリ：<?php $cat = get_the_category(); ?><?php $cat = $cat[0]; ?><?php echo get_cat_name($cat->term_id); ?></p>
-	        </div>
-	        <div class="blog-box-inner">
-	            <div class="over thumb" >
-		            <?php if(has_post_thumbnail()) { echo the_post_thumbnail('large'); } ?>
-	            </div>
-	            <div class="text">
-	            	<?php the_excerpt(); ?>
-	            </div><!-- /text -->
-	        </div><!-- /post-inner -->
-			<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"></a>
-	    </div>
+	 <div class="work-box">
+          <?php the_content(); ?>
+           <div class="work-more">
+               <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>" class="button">詳しく見る</a>
+           </div>
+        </div>  
+       <hr class="clear">
+
     
 	<?php endwhile; endif; ?>
 
@@ -106,7 +110,7 @@ if ( locate_template( $old_file_name, false, false ) ) {
 <?php do_action( 'lightning_mainSection_append' ); ?>
 		</div><!-- [ /.mainSection ] -->
 
-		<?php get_sidebar('blog'); ?>
+		<?php get_sidebar('works'); ?>
 
 </div><!-- [ /#wrapper-area ] -->
 <?php get_footer(); ?>

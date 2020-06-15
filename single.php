@@ -55,8 +55,13 @@ if ( lightning_is_page_header_and_breadcrumb() ) {
 	
 				<?php do_action( 'lightning_entry_body_after' ); ?>
 	
-
-	
+				<div class="<?php lightning_the_class_name( 'entry-footer' ); ?>">
+					
+					
+					
+					
+					
+					
 		</article>
 
 		<?php

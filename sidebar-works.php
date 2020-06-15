@@ -2,7 +2,7 @@
 
 <div class="side-list">
 	<h3><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/side_works.png" width="265" height="74" alt="WORKS" /></h3>
-	<ul class="works-cat">
+	<ul class="works-cat wow fadeIn">
 		<?php wp_list_categories('title_li=&taxonomy=works_cat'); ?>
 	</ul>
 
@@ -39,20 +39,3 @@
 	</section>
 </aside>
 
-
-
-
-
-
-<?php
-if(is_page('works') ) {get_sidebar('works');}
-  elseif(in_category('27') ) {get_sidebar('works');}
-  elseif(is_category('25') ) {get_sidebar('blog');}
-  elseif(is_page('flowprice') ) {get_sidebar('price');}
-  elseif(is_page('template') ) {get_sidebar('price');}
- elseif(is_page('template-sp') ) {get_sidebar('price');}
- elseif(is_page('card-plan') ) {get_sidebar('price');}
-else {
-  get_sidebar();
-}
-?>

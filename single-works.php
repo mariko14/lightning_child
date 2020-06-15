@@ -37,15 +37,11 @@ if ( lightning_is_page_header_and_breadcrumb() ) {
 } // if ( lightning_is_page_header_and_top_breadcrumb() ){
 ?>
 
-<div id="wrapper-area" class="wrap flex-area">
+<div id="wrapper-area" class="wrap flex-area works-wrapper">
 		<div id="content">
 
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<header class="<?php lightning_the_class_name( 'entry-header' ); ?>">
-					<p class="date">カテゴリ：<?php the_category(', ') ?></p>
-					
-				</header>
 	
 				<?php do_action( 'lightning_entry_body_before' ); ?>
 	

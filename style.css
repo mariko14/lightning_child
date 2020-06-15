@@ -6,7 +6,7 @@ Template: lightning
 Description: 
 Author: mariko
 Tags: 
-Version: 1.0.3
+Version: 1.0.4
 */
 
 
@@ -1689,6 +1689,45 @@ ul.page-numbers li span.page-numbers.current {
 }
 /* 制作実績
 ------------------------------------------------------------*/
+.single .works-wrapper .entry-body {
+	background: none;
+	padding: 0;
+}
+.single .post .photo-link img{
+	 padding:0;
+	 background:none;
+}
+.photo-link{
+	width:560px;
+	height:auto;
+	padding:7px;
+	margin:0 auto;
+}
+.right .site-title{text-align:center;}
+.right h4{
+	font-size:20px;
+	margin: 0;
+}
+.right h4 a{
+	background: url(images/list_b-min.png) no-repeat left 9px;
+	padding-left: 18px;
+	background-size: 10px auto;
+}
+.right .url{ font-size:12px;}
+.works-text img{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.shiyou{
+	background:url(images/formback.jpg) repeat left top;
+	padding:10px;
+	text-align:center;
+	font-size:12px;
+	font-weight:bold;
+	width:80%;
+	margin:30px auto 0 auto;
+}
+.shiyou p{padding: 0;}
 .work-box{
 	margin-bottom:40px;
 	border-bottom: #D3C9A4 2px dotted;
@@ -1706,6 +1745,37 @@ ul.page-numbers li span.page-numbers.current {
 	font-size: 14px;
 	padding: 0;
 }
+.photo-link img{
+	width: 100%;
+	height: auto;
+}
+#link-price{
+	display:block;
+	margin:50px auto 0;
+	text-align:center;
+}
+.toprice-p{padding:0 0 10px 0;}
+#link-price .button{
+	width: 250px;
+	margin: 0 auto;
+	line-height: 60px;
+	padding: 0;
+	position: relative;
+}
+#link-price .button:after{
+	content:'';
+	display:block;
+	width:244px;
+	height:54px;
+	background:url(images/line-button.png) no-repeat center top;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+}
+#link-price .button span{padding:0 5px;}
 
 
 @media only screen and (min-width: 1140px){ 

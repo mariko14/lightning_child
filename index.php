@@ -7,7 +7,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="page-header_pageTitle">
-					<h1 class="entry-title"><span>WEBデザイナーと子供の生活 <?php single_cat_title(); ?>の記事</span></h1>
+					<h1 class="entry-title"><span><?php single_cat_title(); ?></span></h1>
 				</div>
 			</div>
 		</div>
