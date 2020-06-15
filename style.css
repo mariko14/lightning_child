@@ -6,7 +6,7 @@ Template: lightning
 Description: 
 Author: mariko
 Tags: 
-Version: 1.0.1
+Version: 1.0.3
 */
 
 
@@ -1686,6 +1686,25 @@ ul.page-numbers li a, ul.page-numbers li span.page-numbers {
 ul.page-numbers li span.page-numbers.current {
     color: #d09b8e;
     background-color: #efd984;
+}
+/* 制作実績
+------------------------------------------------------------*/
+.work-box{
+	margin-bottom:40px;
+	border-bottom: #D3C9A4 2px dotted;
+	padding-bottom:20px;
+}
+.works-text{ margin:20px 0 10px 0;}
+.archive .work-more a{
+	display: block;
+	margin: 5px auto 0 auto;
+	text-align: center;
+	width: 130px;
+	height: 40px;
+	line-height: 40px;
+	float: none;
+	font-size: 14px;
+	padding: 0;
 }
 
 

@@ -106,7 +106,7 @@ if ( locate_template( $old_file_name, false, false ) ) {
 <?php do_action( 'lightning_mainSection_append' ); ?>
 		</div><!-- [ /.mainSection ] -->
 
-		<?php get_sidebar(); ?>
+		<?php get_sidebar('blog'); ?>
 
 </div><!-- [ /#wrapper-area ] -->
 <?php get_footer(); ?>

@@ -1,13 +1,12 @@
 <?php get_header(); ?>
 
 
-
 <div class="section page-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="page-header_pageTitle">
-					<h1 class="entry-title"><span>WEBデザイナーと子供の生活 <?php single_cat_title(); ?>の記事</span></h1>
+					<h1 class="entry-title">新着情報一覧</h1>
 				</div>
 			</div>
 		</div>
@@ -15,7 +14,10 @@
 </div>
 
 
+
 <?php
+// Dealing with old files.
+// Actually, it's ok to only use get_template_part().
 /*
  BreadCrumb
 /*-------------------------------------------*/
