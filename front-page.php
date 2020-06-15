@@ -167,17 +167,17 @@
 			
 	　　	<div id="fron-blog" class="info-news">
 				<h2 class="title"><span>ブログ『WEBデザイナーと子供の生活』最新の記事</span></h2>
-				<ul class="wow fadeIn">
+				<ul class="wow fadeIn flex-area">
 					<?php query_posts('posts_per_page=5&order=desc'); ?>
 					<?php while (have_posts()) : the_post(); ?>
-					<li>
-						<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>" class="flex-area-left">
+					<li class="wow fadeIn">
+						<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
 							<div class="front-thum">
 					            <?php if(has_post_thumbnail()) { echo the_post_thumbnail(); } ?>
 				            </div>
 				            <div class="right">
 								<time datetime="<?php the_time('Y-m-d')?>"><?php the_time("Y/n/j"); ?></time>
-								<h2 class="red"><?php the_title(); ?></h2>
+								<h2 class="red"><span><?php the_title(); ?></span></h2>
 				            </div>
 				        </a>
 					</li>

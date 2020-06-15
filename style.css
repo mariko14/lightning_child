@@ -6,7 +6,7 @@ Template: lightning
 Description: 
 Author: mariko
 Tags: 
-Version: 1.0.0
+Version: 1.0.1
 */
 
 
@@ -662,15 +662,35 @@ br.br789,br.br589,br.br489,br.br389{display: none;}
 .thanks a{ display:block;}
 .profile{margin-top:30px;}
 .profile table th,.profile table td{ border:none;}
+
 .info-news{padding-bottom:40px;}
 .info-news li{
 	padding:15px 0 15px 0;
 	border-bottom:#D3C9A4 2px dotted;
 }
+#fron-blog ul{
+	flex-wrap:wrap;-ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;
+	align-items: stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;-webkit-align-items:stretch;
+}
+#fron-blog li{
+	width: 48%;
+	border: none;
+	background: #fff;
+	border-radius: 6px;
+	margin-bottom: 30px;
+	padding: 0;
+}
+#fron-blog li:nth-child(odd){animation-delay: 0s;}
+#fron-blog li:nth-child(even){animation-delay: 0.5s;}
+
+#fron-blog li a{
+	padding: 25px 25px 15px;
+	display: block;
+}
 .info-news a:hover{text-decoration: none !important;}
 .info-news .front-thum{
-	width: 150px;
-	margin-right: 20px;
+	width: 100%;
+	margin: 0 auto 15px;
 }
 .info-news .front-thum img{
 	width: 100%;
@@ -682,6 +702,12 @@ br.br789,br.br589,br.br489,br.br389{display: none;}
 	font-weight: normal;
 }
 .info-news li h2{font-size: 18px;}
+.info-news li h2 span{
+	background: url(images/list_b-min.png) no-repeat left 4px;
+    background-size: 10px 12px;
+    padding-left: 15px;
+    display: block;
+}
 .info-news .top-readmore span{padding-left:20px;}
 
 
@@ -1511,6 +1537,158 @@ dd.answer{margin: 0 0 30px 50px;}
 	color: #D8523F;
 	font-weight: bold;
 }
+
+/* ブログ
+------------------------------------------------------------*/
+.single .entry-header {
+	text-align: right;
+	border: none !important;
+	margin-bottom: 0;
+}
+.single .entry-body{
+	background: #fff;
+	border-radius: 6px;
+	padding: 35px 35px;
+	margin: 0 auto 40px;
+}
+.single .entry-body figure{
+	padding: 5px;
+    background: #fbfbfb;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+.single .entry-body figure img{
+    border-radius: 6px;
+}
+.card{
+	border: none;
+	border-radius: 6px;
+}
+.vk_post_imgOuter_singleTermLabel{
+	background: url(images/formback.jpg) repeat left top;
+	color: #996d43;
+}
+.vk_post_imgOuter ::after {background: rgba(240, 219, 138, 0.3);}
+
+
+.blog-box{
+	background: #fff;
+	border-radius:6px;
+	height:auto;
+	width: auto;
+	padding: 20px 25px 25px 25px;
+	margin: 0 auto 20px auto;
+	
+	display: block;
+	position:relative;
+	cursor:pointer;
+}
+.blog-box a{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display: block;
+}
+.blog-box:hover{opacity: 0.6;}
+.archive .post h2.title{
+	padding: 20px 0;
+	margin:0 0 10px ;
+	background: url(images/blog-index-line.png) repeat-x left bottom;
+}
+.blog-box:hover h2.title{
+	text-decoration: underline !important;
+	color: #f18f23;
+}
+.blog-box .title_space{ margin: 0 auto 10px auto;}
+.blog-box-inner{
+	display: flex; display:-webkit-flex; -js-display: flex; display:-ms-flexbox;
+	justify-content: center; -webkit-box-pack:center; -ms-flex-pack:center; -webkit-justify-content:center;
+	align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;-webkit-align-items:flex-start;
+	width: 100%;}
+.blog-box .date{text-align: right;}
+.blog-box .text{
+	-webkit-flex: 1;flex: 1;width: auto;
+}
+.blog-box .thumb{
+	width: 320px;
+	height: auto;
+	margin: 0 15px 0 0;
+	
+}
+.blog-box .thumb img{border-radius: 6px;}
+.blog-box .date{ font-size:14px;}
+.blog-box .more-link{
+	display: block;
+	text-align: right;
+	padding: 30px 0 10px 0;
+	font-family: "I-OTF-UDゴ表示Pro M",IwaUDGoDspPro-Md;
+	font-size:14px;
+	color: #387a8a;
+	text-decoration: underline;
+}
+.blog-box .more-link span{
+	background:url(images/list_b-min.png) no-repeat left 4px;
+	background-size: 6px auto;
+	padding-left: 12px;
+}
+.single .content header{
+	overflow:hidden;
+	margin-bottom:20px;
+}
+
+.post-single img,.post-single .wp-caption img{
+	clear:both;
+	padding: 5px;
+	background: #fbfbfb;
+	max-width: 575px;
+	height: auto;
+	}
+.post-single .wp-caption{margin: 0 auto 15px auto;}
+.post-single .yarpp-thumbnail-title{
+	font-size: 12px !important;font-family: "I-OTF-UDゴ表示Pro M",IwaUDGoDspPro-Md;}
+.post-single .w-back{
+	padding:25px 20px 20px 20px;
+	background:#fff;
+	border-radius: 6px;
+	margin: 0 auto 15px;
+}
+.post-single .midashi{
+	font-size: 20px;
+	font-weight: bold;
+	color: #665D52;
+}
+.post-single .green{
+	font-size: 20px;
+	color: #B9D22C;
+	padding: 0 10px 0 0;
+}
+.post-single .padding40{padding-top: 40px;}
+.syntaxhighlighter{padding: 20px 10px;}
+ul.page-numbers li{
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin: 0 5px;
+}
+ul.page-numbers li a{
+	background: #387A8A url(images/button_back.jpg) repeat left top;
+	color: #fff;
+}
+ul.page-numbers li a, ul.page-numbers li span.page-numbers {
+    padding: 0;
+    display: block;
+    border: 0;
+}
+ul.page-numbers li span.page-numbers.current {
+    color: #d09b8e;
+    background-color: #efd984;
+}
+
+
 @media only screen and (min-width: 1140px){ 
 	nav#mainNav{ clear:both; position:relative; top:-120px;z-index: 1;}
 	.nav-left{margin-right: 130px !important;}
@@ -1576,8 +1754,8 @@ dd.answer{margin: 0 0 30px 50px;}
 	.single .entry-body img.photo-375{max-width:375px;height:auto;}
 	.footer-logo img{display:glock;margin:0 auto 10px;}
 
-
-
+	
+	#fron-blog li a {padding: 10px;}
 	.top-readmore{float: none;margin: 20px auto 50px auto;padding: 0; display: block; text-align: center;text-decoration: underline;}
 	.top-readmore span{background-size: 6px auto;padding: 0 0 0 11px;}
 	.thanks img{margin: 0 auto;float: none;}
@@ -1604,7 +1782,6 @@ dd.answer{margin: 0 0 30px 50px;}
 	#header h1{padding:10px;}
 	.thumbWrap{margin:0 auto;}
 	.main_p{ padding-bottom:30px;}
-	.post{ max-width:625px; margin:0 auto;}
 	.blog-box{margin: 0 auto 20px auto;}
 	.page-header {width: 94%;margin: 20px auto 0;border-radius: 6px;}
 	
@@ -1636,11 +1813,14 @@ dd.answer{margin: 0 0 30px 50px;}
 	#banners p img{width:100%;height:auto;}
 	#contactBanner{margin:0 auto;}
 	.side-list li ul li a br{display: none;}
+	/*下層*/
+	.page-header_pageTitle, h1.page-header_pageTitle:first-child {padding: 0 0 15px;}
 	.price-nav .price-nav-button{width: 32%;}
 	.price-nav .price-nav-button-inner{padding: 10px 0 15px;}
 	#flow-list .flow-ul li {width: 33%;padding: 0}
 	#flow-list .flow-ul .step {top: 0;left: 0;width: 40px;height: auto;}
-	
+	.single .entry-body{background: none;padding: 0;}
+	.single .entry-header{margin-bottom: 20px;}
 }
 @media only screen and (max-width:789px){	
 	br.br789{display: block;}
@@ -1700,7 +1880,10 @@ dd.answer{margin: 0 0 30px 50px;}
 	.contact-baner h3 {font-size: 18px;line-height: 140%;text-align: center;}
 	.contact-robo {top: -16px;width: 80px;height: auto;}
 	.contact-baner .toconatct {margin: -3px auto 0;}
-	
+	.blog-box-inner{display: block;}
+	.blog-box .thumb {margin: 0 auto 20px;}
+	.archive .post h2.title {margin-top: 5px !important;}
+	.archive .post h2.title:before{content: none;} 
 	
 	
 }
@@ -1819,9 +2002,10 @@ dd.answer{margin: 0 0 30px 50px;}
 	.top-works-title h2 img{display: block;margin: 0 auto 3px;}
 	#content .date{font-size: 12px;}
 	.info-news li a{display: block;}
-	.info-news .front-thum{margin: 0 auto 10px;}
+	#fron-blog li{width: 100%;margin-bottom: 20px;}
+	
 	/*下層*/
-	.page-header_pageTitle, h1.page-header_pageTitle:first-child {font-size: 24px;line-height: 130%;}
+	.page-header_pageTitle, h1.page-header_pageTitle:first-child {font-size: 24px;line-height: 130%;padding: 0 0 12px;}
 	table.table-res{border: none;}
 	table.table-res tr{display: block;overflow: hidden;padding: 0 0 20px 0;}
     table.table-res th,table.table-res td{padding: 10px 0;clear: both;width: 99% !important;display: block;}
@@ -1899,6 +2083,7 @@ dd.answer{margin: 0 0 30px 50px;}
 	#fooder-h2{padding: 30px 0 0 0;}
 	
 	/*下層*/
+	.page-header_pageTitle, h1.page-header_pageTitle:first-child,h1.entry-title {font-size: 20px;}
 	.shiyou{ width:280px;}
 	.price-nav .price-nav-button p span{display: none;}
 	.pack-box img.pack-title {width:100%;height:auto;}
@@ -1931,7 +2116,7 @@ dd.answer{margin: 0 0 30px 50px;}
 	#temp-plan-top .right .arctext-h3 {font-size: 20px !important;}
 	.arctext-h3 .marker {line-height: 150%;}
 	.temp-plan-box h3.pack-name{font-size: 20px;}
-	
+	.blog-box .thumb {width: 100%;}
 	
 	
 }

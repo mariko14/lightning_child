@@ -1,42 +1,4 @@
 <aside id="sidebar">
-<?php if(is_page('flowprice')):?>
-	<div class="side-list">
-	 	<h3><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/side_price.png" width="265" height="74" alt="PRICE" /></h3>
-		 <ul>
-			 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/flowprice/#templateplan"  class="scroll"><span>テンプレートプラン</span></a>
-			   <ul>
-			     <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/flowprice/template-sp/"><span>スマホ対応テンプレート一覧</span></a></li>
-			   </ul>
-			    </li>
-			 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/flowprice/#pack_price"  class="scroll"><span>ホームページ制作パック料金</span></a></li>
-			 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/flowprice/#price-list"  class="scroll"><span>ホームページ制作料金</span></a></li>
-			 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/flowprice/#flow-list"  class="scroll"><span>制作の流れ</span></a></li>
-		 </ul>
-	
-	</div>
-<?php endif; ?>
-
-<?php if(is_page('template-sp')):?>
-	<div class="side-list">
-	 	<h3><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/side_price.png" width="265" height="74" alt="PRICE" /></h3>
-		 <ul>
-			 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/flowprice/#templateplan"  class="scroll"><span>テンプレートプラン</span></a>
-			   <ul>
-			     <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/flowprice/template-sp/"><span>スマホ対応テンプレート一覧</span></a></li>
-			   </ul>
-			    </li>
-			 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/flowprice/#pack_price"  class="scroll"><span>ホームページ制作パック料金</span></a></li>
-			 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/flowprice/#price-list"  class="scroll"><span>ホームページ制作料金</span></a></li>
-			 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/flowprice/#flow-list"  class="scroll"><span>制作の流れ</span></a></li>
-		 </ul>
-	
-	</div>
-<?php endif; ?>
-
-
-
-
-<?php if(is_single()):?>
 
 <div class="side-list">
 	<h3><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/side-blog.png" width="265" height="74" alt="ブログカテゴリー" /></h3>
@@ -97,12 +59,6 @@
 		</ul>
 	</div>
 </div>
-<?php endif; ?>
-
-
-
-
-
 	
 	
 	
@@ -137,19 +93,3 @@
 </aside>
 
 
-
-
-
-
-<?php
-if(is_page('works') ) {get_sidebar('works');}
-  elseif(in_category('27') ) {get_sidebar('works');}
-  elseif(is_category('25') ) {get_sidebar('blog');}
-  elseif(is_page('flowprice') ) {get_sidebar('price');}
-  elseif(is_page('template') ) {get_sidebar('price');}
- elseif(is_page('template-sp') ) {get_sidebar('price');}
- elseif(is_page('card-plan') ) {get_sidebar('price');}
-else {
-  get_sidebar();
-}
-?>
