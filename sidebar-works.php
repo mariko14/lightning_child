@@ -8,19 +8,31 @@
 
 </div>
 	
+	<div id="nokke-area">
+		<h3><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/nokke-ribon-side.png" width="300" height="60" alt="動画のっけ-ビジネス営業ツール・プレゼンPR動画・研修教材などホワイトボードアニメーション動画制作サービス" /></h3>
+		<h4><span class="text">アニメーション動画<br class="br1140">制作サービス</span></h4>
+		<p class="nokke-sub">動画のっけはビジネス営業ツール・プレゼンPR動画・研修教材などに利用できるホワイトボードアニメーション動画制作サービスです</p>
+		<div id="side-movie-area" class="movie-area wow fadeIn">
+			<div class="movide-area-inner">
+				<video autoplay muted playsinline src="<?php echo get_stylesheet_directory_uri(); ?>/movie/main-movie.mp4"></video>
+			</div>
+		</div>
+		<a href="https://douga-nokke.com/" class="button"><span>動画のっけ特設サイトへ</span></a>
+	</div>
 	
-	<a class="over banner" href="<?php echo esc_url( home_url( '/' ) ); ?>/flowprice/">
-		  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/banner-template.jpg" alt="大人気の素早く手軽な格安ホームページ制作テンプレートプラン" width="265" height="180">
-	</a>
+	
 	<div id="side-banner-area">
-		<a class="over banner" href="<?php echo esc_url( home_url( '/' ) ); ?>/category/blog/">
-			  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/baner_blog.jpg" alt="女性デザイナーのつれづれブログへ" width="265" height="106">
+		<a class="over banner wow fadeIn" href="<?php echo esc_url( home_url( '/' ) ); ?>/flowprice/">
+			  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/banner-template.png" alt="大人気の素早く手軽な格安ホームページ制作テンプレートプラン" width="300" height="180">
 		</a>
-	    <a class="over banner" href="<?php echo esc_url( home_url( '/' ) ); ?>/contact/">
-		    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/baner_mitumori.jpg" alt="お見積もり" width="265" height="105">
+		<a class="over banner wow fadeIn" href="<?php echo esc_url( home_url( '/' ) ); ?>/category/blog/">
+			  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/banner-blog.png" alt="女性デザイナーと子どもの生活ブログへ" width="300" height="180">
 		</a>
-		<a class="over banner" href="http://chomo-photoisland.com/">
-		   <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/baner-album.jpg" alt="アルバムサイトへ" width="265" height="100">
+	    <a class="over banner wow fadeIn" href="<?php echo esc_url( home_url( '/' ) ); ?>/category/pretty/">
+		    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/banner-pretty.png" alt="女性デザイナーがギュッと集めたかわいいものあつめブログ" width="300" height="180">
+		</a>
+		<a class="over banner wow fadeIn" href="https://chomo-photoisland.com/">
+		   <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/banner-chomophoto.png" alt="ハリネズミアルバムサイトへ" width="300" height="180">
 		</a>
 	</div>
   

@@ -117,6 +117,42 @@
 			    
 		</ul>
 	</div>
+	
+	<div id="front-nokke-area" class="wow fdeInUp">
+		<div id="front-nokke-inner">
+			<p id="new-product" class="wow bounceIn">新サービス</p>
+			<h3 id="fron-nokke-h3" class="flex-area-center">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/nokke/nokke-flower2.png" width="32" height="32" alt="" class="nokke-flower"/>
+				<span>アニメーション動画を乗っけて、<br class="br789">みんなHappy!!</span>
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/nokke/nokke-flower2.png" width="32" height="32" alt="" class="nokke-flower"/>
+			</h3>
+			<h2 id="front-nokke-top"><span>動画のっけ</span><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/nokke/nokke-title-ribon.png" width="326" height="92" alt="動画のっけ-ビジネス営業ツール・プレゼンPR動画・研修教材などホワイトボードアニメーション動画制作サービス" class="nokke-title-ribon"></h2>
+			<div id="fron-nokke-up" class="flex-area-center">
+				<div class="left">
+					<video autoplay muted playsinline src="<?php echo get_stylesheet_directory_uri(); ?>/movie/main-movie.mp4"></video>
+				</div>
+				<div class="right">
+					<div class="nokke-list flex-area-center">
+						<h3 class="nokke-list1 wow bounceIn"><span>ビジネスの<br>営業ツールとして</span></h3>
+						<h3 class="nokke-list2 wow bounceIn"><span>商談や<br>プレゼンに</span></h3>
+						<h3 class="nokke-list3 wow bounceIn"><span>新サービスの<br>アピールに</span></h3>
+						<h3 class="nokke-list4 wow bounceIn"><span>社内の<br>研修教材として</span></h3>
+					</div>
+					
+					<p class="nokke-limit">今なら期間限定価格でご提供！</p>
+					<a href="https://douga-nokke.com/" class="button"><span>動画のっけ特設サイトへ</span></a>
+				</div>
+			</div>
+			
+			<h2 id="front-nokke-bottom" class="flex-area-center wow fadeIn">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/nokke/chomo1.png" width="43" height="45" alt="" class="chomo1 icon-flex"/>
+				<span>あなたのビジネスシーンと人生の<br class="br589">Happyに</span>
+			</h2>
+		</div>
+	</div>
+	
+	
+	
  	
 	<div id="top-menu-list" class="cont-box flex-area-center">
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>/flowprice/#templateplan" class="top-menu-box top-menu-box1 wow bounceIn">
@@ -143,7 +179,7 @@
 		
 	</div>
  	
-
+</div>
 			
 <div id="front-info-area" class="section-area">
 	<div id="wrapper-area" class="wrap flex-area">
@@ -168,7 +204,7 @@
 	　　	<div id="fron-blog" class="info-news">
 				<h2 class="title"><span>ブログ『WEBデザイナーと子供の生活』最新の記事</span></h2>
 				<ul class="wow fadeIn flex-area">
-					<?php query_posts('posts_per_page=5&order=desc'); ?>
+					<?php query_posts('posts_per_page=6&order=desc'); ?>
 					<?php while (have_posts()) : the_post(); ?>
 					<li class="wow fadeIn">
 						<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">

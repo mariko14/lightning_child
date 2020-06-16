@@ -32,7 +32,7 @@ if ( locate_template( $old_file_name, false, false ) ) {
 
 <div id="wrapper-area" class="wrap flex-area">
 		<div id="content">
-			<p style="padding-bottom:40px;">ここに掲載している以外の実績もございます。詳しくはメールフォームよりお問い合わせください</p>
+			<p style="padding-bottom:40px;" class="text-center">ここに掲載している以外の実績もございます。詳しくはメールフォームよりお問い合わせください</p>
 
 	<?php
 	/*
@@ -71,7 +71,7 @@ if ( locate_template( $old_file_name, false, false ) ) {
 	
 <?php if (have_posts()) :?>
 	<?php while (have_posts()) : the_post(); ?>
-	 <div class="work-box">
+	 <div class="work-box wow fadeIn">
           <?php the_content(); ?>
            <div class="work-more">
                <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>" class="button">詳しく見る</a>
